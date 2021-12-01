@@ -9,7 +9,7 @@ if (message && branchname) {
 
     if (!error) {
       let { errormessage, stdout, stderr } = execSync(
-        `git push -u origin "${branchname}"`
+        `git push origin "${branchname}"`
       );
       if (!errormessage) {
         console.log("successfully pushed your code to Github");
