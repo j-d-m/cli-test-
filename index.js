@@ -1,4 +1,4 @@
-// console.log(process.argv);
+#! /usr/bin/env node
 const { exec, execSync } = require("child_process");
 // const { stdout, stderr } = require("process");
 const [message, branchname] = process.argv.slice(2);
@@ -12,7 +12,7 @@ if (message && branchname) {
         `git push -u origin "${branchname}"`
       );
       if (!errormessage) {
-        console.log("successfully pushed your code to github");
+        console.log("successfully pushed your code to Github");
         console.log(stdout);
       }
     }
