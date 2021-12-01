@@ -13,7 +13,6 @@ if (message && branchname) {
       );
       if (!errormessage) {
         console.log("successfully pushed your code to Github");
-        console.log(stdout);
       }
     }
   }
